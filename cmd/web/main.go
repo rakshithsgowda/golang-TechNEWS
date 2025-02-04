@@ -3,9 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 	"os"
-	"time"
 
 	"github.com/CloudyKit/jet/v6"
 	"github.com/alexedwards/scs/v2"
@@ -49,12 +47,12 @@ func main() {
 	}
 
 	// Sessions initialization
-	app.session = scs.New()
-	app.session.Lifetime = 24 * time.Hour
-	app.session.Cookie.Persist = true
-	app.session.Cookie.Name = app.appName
-	app.session.Cookie.Domain = app.server.host
-	app.session.Cookie.SameSite = http.SameSiteStrictMode
+	// app.session = scs.New()
+	// app.session.Lifetime = 24 * time.Hour
+	// app.session.Cookie.Persist = true
+	// app.session.Cookie.Name = app.appName
+	// app.session.Cookie.Domain = app.server.host
+	// app.session.Cookie.SameSite = http.SameSiteStrictMode
 
 	// serve the App
 	if err := app.listenAndServe(); err != nil {

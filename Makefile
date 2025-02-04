@@ -1,5 +1,8 @@
+tidy:
+	go mod tidy
+
 run:
-	@go run ./cmd/web
+	@go run ./cmd/web/
 
 
 run/migrate:

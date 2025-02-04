@@ -15,6 +15,6 @@ func (a *application) listenAndServe() error {
 		ReadTimeout: 300 * time.Second,
 	}
 
-	a.infoLog.Printf("Server listening on : %s\n", host)
+	a.infoLog.Printf("\n Server listening on : %s\n", host)
 	return srv.ListenAndServe()
 }

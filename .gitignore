@@ -1,6 +1,10 @@
-# user-defaults and plans
-.idea
+
 
 # environments
 .env
 
+
+
+bin/
+vendor
+.DS_Store
